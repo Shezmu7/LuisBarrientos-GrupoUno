@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import Imagen from "../Imagenes/imagen.jsx"; // Asegúrate de crear este archivo para los estilos
+import Imagen from "../Imagenes/imagen.jsx";
 
 const Footer = () => {
     return (

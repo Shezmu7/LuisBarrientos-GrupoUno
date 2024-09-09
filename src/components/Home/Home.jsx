@@ -7,7 +7,7 @@ const Store = () => {
     const [cartItems, setCartItems] = useState([]);
 
     const products = [
-        { id: 1, name: 'Producto 1', price: 10000, stock: 6, image: '/Image/Poleron.jpg' },
+        { id: 1, name: 'Producto 1', price: 10000, stock: 5, image: '/Image/Poleron.jpg' },
         { id: 2, name: 'Producto 2', price: 15000, stock: 5, image: '/Image/Poleron2.jpg' },
         { id: 3, name: 'Producto 3', price: 30000, stock: 5, image: '/Image/Poleronmujer4.jpg' },
         { id: 4, name: 'producto 4', price: 25000, stock: 5, image: '/Image/Poleronhombre1.jpeg' },

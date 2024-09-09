@@ -42,7 +42,6 @@
     font-size: 30px;
 }
 
-/* Para pantallas pequeñas (tabletas y móviles) */
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
@@ -80,5 +79,36 @@
 }
 
 .navbar a:hover {
+    background-color: lightslategray;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: flex;
+}
+
+.dropdown-menu a {
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
     background-color: lightslategray;
 }
