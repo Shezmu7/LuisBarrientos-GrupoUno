@@ -27,7 +27,7 @@ const Product = ({ product, addToCart }) => {
                     id={`quantity-${product.id}`}
                     value={quantity}
                     min="1"
-                    max={product.stock}  // Limita la cantidad máxima al stock disponible
+                    max={product.stock}
                     onChange={handleQuantityChange}
                 />
                 <p>Stock: {product.stock}</p>
