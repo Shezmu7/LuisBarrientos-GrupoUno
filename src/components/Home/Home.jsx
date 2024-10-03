@@ -30,7 +30,7 @@ const Store = () => {
         { id: 21, name: 'producto 9', price: 15000, stock: 5, image: '/Image/vestidoazul1.jpg' },
         { id: 22, name: 'producto 9', price: 15000, stock: 5, image: '/Image/vestidoelegante.jpeg' },
         { id: 23, name: 'producto 9', price: 15000, stock: 5, image: '/Image/vestidogalaazul.jpg' },
-        { id: 24, name: 'producto 9', price: 15000, stock: 5, image: '/Image/X_topazulrey0406.jpeg' },
+        { id: 24, name: 'producto 9', price: 15000, stock: 5, image: '/Image/vestidoelegante.jpeg' },
 
     ];
 
