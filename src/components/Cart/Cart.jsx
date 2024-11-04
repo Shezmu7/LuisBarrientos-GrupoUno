@@ -21,7 +21,7 @@ const Cart = ({ cartItems }) => {
                 </ul>
             )}
             <div className="cart-total">
-                <h3>Total: ${(totalPrice)}</h3>
+                <h3>Total: ${(totalPrice).toFixed(2)}</h3>
             </div>
         </div>
     );

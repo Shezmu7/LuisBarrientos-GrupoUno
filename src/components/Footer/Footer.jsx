@@ -1,12 +1,12 @@
 import React from 'react';
 import './Footer.css';
-import Imagen from "../Imagenes/imagen.jsx";
+import Imagen from "../Imagenes/Imagen.jsx";
 
 const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer-content">
-                <Imagen imgurl={"public/Image/lunaazul.jpg"} />
+                <Imagen imgurl={"public/Image/lunaazullogo.png"} />
                 <div className="company-info">
                     <h3>Luna Azul</h3>
                     <p>De aqui a la Luna vistiendo azul (LA)</p>

@@ -1,10 +1,11 @@
-import './Home.css'
-import React, { useState } from 'react';
-import Product from "../Product/Product.jsx";
-import Cart from "../Cart/Cart.jsx";
+import './Home.css';
+import React from 'react';
+import ItemList from "../Itemlist/ItemList.jsx";
+import { useCart } from '../../contexts/CartContext.jsx';
+
 
 const Store = () => {
-    const [cartItems, setCartItems] = useState([]);
+    const { addToCart } = useCart();
 
     const products = [
         { id: 1, name: 'Producto 1', price: 10000, stock: 5, image: '/Image/Poleron.jpg' },
@@ -34,18 +35,14 @@ const Store = () => {
 
     ];
 
-    const addToCart = (product, quantity) => {
-        setCartItems([...cartItems, { product, quantity }]);
-    };
 
     return (
         <div className="store-container">
             <div className="product-list">
                 {products.map((product) => (
-                    <Product key={product.id} product={product} addToCart={addToCart} />
+                    <ItemList key={product.id} product={product} addToCart={addToCart} />
                 ))}
             </div>
-            <Cart cartItems={cartItems} />
         </div>
     );
 };
