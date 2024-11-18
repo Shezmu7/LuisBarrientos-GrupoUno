@@ -1,40 +1,37 @@
-import './ItemList.css'
-import React, { useState } from 'react';
+import React, { useEffect, useState } from "react";
+import Item from "../Item/Item";
+import { getProducts } from "../../data/asyncMock";
+import Loading from "../Loading/Loading";
+import "./ItemList.css";
 
-const ItemList = ({ product, addToCart }) => {
-    const [quantity, setQuantity] = useState(1);
+export default function ItemList({ products: initialProducts }) {
+    const [products, setProducts] = useState(initialProducts || []);
+    const [loading, setLoading] = useState(!initialProducts);
 
-    const handleQuantityChange = (e) => {
-        const value = parseInt(e.target.value, 10);
-        if (value >= 1 && value <= product.stock) {
-            setQuantity(value);
+    useEffect(() => {
+        if (!initialProducts) {
+            getProducts().then((data) => {
+                setProducts(data);
+                setLoading(false);
+            });
+        } else {
+            setLoading(false);
         }
-    };
-
-    const handleAddToCart = () => {
-        addToCart(product, quantity);
-    };
+    }, [initialProducts]);
 
     return (
-        <div className="product-card">
-            <img src={product.image} alt={product.name} />
-            <h3>{product.name}</h3>
-            <p>Precio: ${product.price}</p>
-            <div className="quantity-selector">
-                <label htmlFor={`quantity-${product.id}`}>Cantidad: </label>
-                <input
-                    type="number"
-                    id={`quantity-${product.id}`}
-                    value={quantity}
-                    min="1"
-                    max={product.stock}
-                    onChange={handleQuantityChange}
-                />
-                <p>Stock: {product.stock}</p>
-            </div>
-            <button onClick={handleAddToCart}>Agregar al carro</button>
-        </div>
+        <>
+            {loading ? (
+                <div>
+                    <Loading />
+                </div>
+            ) : (
+                <div className="item-list">
+                    {products.map((prod) => (
+                        <Item {...prod} key={prod.id} />
+                    ))}
+                </div>
+            )}
+        </>
     );
-};
-
-export default ItemList;
+}

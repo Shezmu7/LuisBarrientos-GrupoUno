@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 import Imagen from "../Imagenes/Imagen.jsx";
 
@@ -9,13 +10,15 @@ const Footer = () => {
                 <Imagen imgurl={"public/Image/lunaazullogo.png"} />
                 <div className="company-info">
                     <h3>Luna Azul</h3>
-                    <p>De aqui a la Luna vistiendo azul (LA)</p>
+                    <p>Un viaje lunar</p>
+                    <p>Que tu próximo viaje sea con estilo</p>
+                    <p>(LA)</p>
                 </div>
                 <div className="footer-links">
-                    <a href="/about">Sobre nosotros</a>
-                    <a href="/contact">Acerca de</a>
-                    <a href="/privacy">Informacion</a>
-                    <a href="/terms">Atencion al cliente</a>
+                    <Link to="/about">Sobre nosotros</Link>
+                    <Link to="/contact">Acerca de</Link>
+                    <Link to="/information">Información</Link>
+                    <Link to="/service">Atención al cliente</Link>
                 </div>
             </div>
         </footer>

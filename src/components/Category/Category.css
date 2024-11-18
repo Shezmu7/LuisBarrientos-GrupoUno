@@ -1,9 +1,12 @@
-.loading-container {
+.products-category-container {
     max-width: 1170px;
     margin: 0 auto;
+    padding: 0 15px;
+}
+
+.loading-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    padding: 20px 0;
 }
-

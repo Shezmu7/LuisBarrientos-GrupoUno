@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { FaCaretDown, FaCaretUp, FaHome, FaTags, FaShoppingCart, FaStore, FaUser} from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import { FaCaretDown, FaCaretUp, FaHome, FaTags, FaShoppingCart, FaStore, FaUser } from 'react-icons/fa';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -19,34 +20,41 @@ const Navbar = () => {
 
     return (
         <nav className="navbar">
-            <a href="/">{isMobile ? <FaHome /> : "Inicio"}</a>
-
+            <Link to="/" className="navbar-link">
+                {isMobile ? <FaHome /> : 'Inicio'}
+            </Link>
             <div
                 className="dropdown"
                 onMouseEnter={!isMobile ? toggleCategorias : null}
                 onMouseLeave={!isMobile ? () => setIsCategoriasOpen(false) : null}
             >
-                <a onClick={isMobile ? toggleCategorias : null}>
-                    {isMobile ? <FaTags /> : "Categorías"}
+                <span onClick={isMobile ? toggleCategorias : null} className="navbar-link">
+                    {isMobile ? <FaTags /> : 'Categorías'}
                     {!isMobile && (isCategoriasOpen ? <FaCaretUp /> : <FaCaretDown />)}
-                </a>
+                </span>
                 {isCategoriasOpen && (
                     <div className="dropdown-menu">
-                        <a href="/categoria1">Poleras</a>
-                        <a href="/categoria2">Polerones</a>
-                        <a href="/categoria3">Gorros</a>
-                        <a href="/categoria4">Suéter</a>
-                        <a href="/categoria5">Pantalones</a>
-                        <a href="/categoria6">Populares</a>
+                        <Link to="/category/buzo">Buzos</Link>
+                        <Link to="/category/Pantalones">Pantalones</Link>
+                        <Link to="/category/Ternos">Ternos</Link>
+                        <Link to="/category/Blazer">Blazer</Link>
+                        <Link to="/category/Camisas">Camisas</Link>
+                        <Link to="/category/conjuntos">Conjuntos</Link>
+                        <Link to="/category/Vestidos">Vestidos</Link>
                     </div>
                 )}
             </div>
-
-            <a href="/product">{isMobile ? <FaStore /> : "Productos"}</a>
-            <a href="/carro">{isMobile ? <FaShoppingCart /> : "Carro"}</a>
-            <a href="/cuenta">{isMobile ? <FaUser /> : "Cuenta"}</a>
+            <Link to="/products" className="navbar-link">
+                {isMobile ? <FaStore /> : 'Productos'}
+            </Link>
+            <Link to="/carro" className="navbar-link">
+                {isMobile ? <FaShoppingCart /> : 'Carro'}
+            </Link>
+            <Link to="/cuenta" className="navbar-link">
+                {isMobile ? <FaUser /> : 'Cuenta'}
+            </Link>
         </nav>
     );
-}
+};
 
 export default Navbar;

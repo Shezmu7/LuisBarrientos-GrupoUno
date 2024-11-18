@@ -1,70 +1,188 @@
-const products = [
+export const products = [
     {
         id: 1,
-        name: "Producto A",
-        price: 29.99,
-        category: "Electrónica",
-        description: "Descripción detallada del Producto A",
-        image: "path/to/imageA.jpg", // Ruta de la imagen
+        name: 'Terno sin camisa',
+        price: 27990,
+        description: 'Pantalon formal con blazer sin camisa ni corbata.',
         stock: 10,
-        rating: 4.5,
+        img: '/Image/ternosincamisa.png',
+        category: 'Ternos',
+        sizes: ['S', 'M', 'L', 'XL']
     },
     {
         id: 2,
-        name: "Producto B",
-        price: 19.99,
-        category: "Electrónica",
-        description: "Descripción detallada del Producto B",
-        image: "path/to/imageB.jpg",
+        name: 'Terno Completo',
+        price: 42990,
+        description: 'Traje de terno completo.',
         stock: 5,
-        rating: 4.0,
+        img: '/Image/ternocompleto.png',
+        category: 'Ternos',
+        sizes: ['S', 'M', 'L', 'XL']
     },
     {
         id: 3,
-        name: "Producto C",
-        price: 49.99,
-        category: "Ropa",
-        description: "Descripción detallada del Producto C",
-        image: "path/to/imageC.jpg",
-        stock: 3,
-        rating: 3.5,
+        name: 'Blazer con camisa',
+        price: 24990,
+        description: 'Blazer con camisa blanca y corbata',
+        stock: 5,
+        img: '/Image/blazerconcamisa.png',
+        category: 'Blazer',
+        sizes: ['S', 'M', 'L', 'XL']
     },
     {
         id: 4,
-        name: "Producto D",
-        price: 99.99,
-        category: "Ropa",
-        description: "Descripción detallada del Producto D",
-        image: "path/to/imageD.jpg",
-        stock: 8,
-        rating: 4.8,
+        name: 'Terno completo',
+        price: 37990,
+        description: 'Terno completo rojo',
+        stock: 5,
+        img: '/Image/ternocompletorojo.png',
+        category: 'Ternos',
+        sizes: ['S', 'M', 'L', 'XL']
     },
     {
         id: 5,
-        name: "Producto E",
-        price: 9.99,
-        category: "Accesorios",
-        description: "Descripción detallada del Producto E",
-        image: "path/to/imageE.jpg",
-        stock: 25,
-        rating: 5.0,
+        name: 'Blazer rojo con camisa',
+        price: 29990,
+        description: 'Blazer rojo con camisa negra',
+        stock: 5,
+        img: '/Image/blazerrojoconcamisa.png',
+        category: 'Blazer',
+        sizes: ['S', 'M', 'L', 'XL']
+    },
+    {
+        id: 6,
+        name: 'Camisa lila',
+        price: 15990,
+        description: 'Camisa de mangas largas de color lila',
+        stock: 5,
+        img: '/Image/camisalila.png',
+        category: 'Camisas',
+        sizes: ['S', 'M', 'L', 'XL']
+    },
+    {
+        id: 7,
+        name: 'Blazer Rojo claro',
+        price: 21990,
+        description: 'Blazer de color rojo claro con dobles negro',
+        stock: 5,
+        img: '/Image/blazerrojo.png',
+        category: 'Blazer',
+        sizes: ['S', 'M', 'L', 'XL']
+    },
+    {
+        id: 8,
+        name: 'Terno niño',
+        price: 14990,
+        description: 'Terno completo azul para niños',
+        stock: 5,
+        img: '/Image/ternoazulninos.png',
+        category: 'Ternos',
+        sizes: ['XS', 'S', 'M', 'L']
+    },
+    {
+        id: 9,
+        name: 'Blazer gris',
+        price: 20990,
+        description: 'Blazer gris con camisa blanca y corbata',
+        stock: 5,
+        img: '/Image/blazergrisconcamisa.png',
+        category: 'Blazer',
+        sizes: ['S', 'M', 'L', 'XL']
+    },
+    {
+        id: 10,
+        name: 'Camisa celeste',
+        price: 16990,
+        description: 'Camisa celeste de mangas largas',
+        stock: 5,
+        img: '/Image/camisaceleste.png',
+        category: 'Camisas',
+        sizes: ['S', 'M', 'L', 'XL']
+    },
+    {
+        id: 11,
+        name: 'Camisa celeste',
+        price: 15990,
+        description: 'Camisa celeste de mangas cortas',
+        stock: 5,
+        img: '/Image/camisacelestesinmangas.png',
+        category: 'Camisas',
+        sizes: ['S', 'M', 'L', 'XL']
+    },
+    {
+        id: 12,
+        name: 'Vestido Azul',
+        price: 31990,
+        description: 'Vestido de Gala de color azul',
+        stock: 5,
+        img: '/Image/vestidoazul.png',
+        category: 'Vestidos',
+        sizes: ['S', 'M', 'L', 'XL']
+    },
+    {
+        id: 13,
+        name: 'Blazer',
+        price: 19990,
+        description: 'blazer negro',
+        stock: 5,
+        img: '/Image/blazernegro.png',
+        category: 'Blazer',
+        sizes: ['S', 'M', 'L', 'XL']
+    },
+    {
+        id: 14,
+        name: 'Camisa Gris',
+        price: 16990,
+        description: 'Camisa gris con mangas largas',
+        stock: 5,
+        img: '/Image/camisagrisconmangas.png',
+        category: 'Camisas',
+        sizes: ['S', 'M', 'L', 'XL']
+    },
+    {
+        id: 15,
+        name: 'Camisa negra',
+        price: 17990,
+        description: 'Camisa negra con cuello morado',
+        stock: 5,
+        img: '/Image/camisaconcuellomorado.png',
+        category: 'Camisas',
+        sizes: ['S', 'M', 'L', 'XL']
+    },
+    {
+        id: 16,
+        name: 'Terno Completo',
+        price: 17990,
+        description: 'Traje de 3 piezas con camisa',
+        stock: 5,
+        img: '/Image/trajecompleto.png',
+        category: 'Ternos',
+        sizes: ['S', 'M', 'L', 'XL']
     },
 ];
 
-export const getProductById = async (id) => {
-    await simulateLoading(1000); // Simula un tiempo de carga
-    return products.find((product) => product.id === id) || null;
+export const getProducts = () => {
+    return new Promise((res) => {
+        setTimeout(() => {
+            res(products);
+        }, 2500);
+    });
 };
 
-export const getProductsByCategory = async (category) => {
-    await simulateLoading(1000); // Simula un tiempo de carga
-    return products.filter((product) => product.category === category);
+export const getProductById = (id) => {
+    return new Promise((res) => {
+        const productoFiltrado = products.find((product) => product.id === parseInt(id));
+        setTimeout(() => {
+            res(productoFiltrado);
+        }, 2000);
+    });
 };
 
-export const getCategories = async () => {
-    await simulateLoading(1000); // Simula un tiempo de carga
-    const categories = [...new Set(products.map((product) => product.category))];
-    return categories;
+export const getProductByCategory = (category) => {
+    return new Promise((res) => {
+        const productosFiltrados = products.filter((product) => product.category === category);
+        setTimeout(() => {
+            res(productosFiltrados);
+        }, 2000);
+    });
 };
-
-// Aun no implemento el asyncMock

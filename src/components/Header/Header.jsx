@@ -3,6 +3,7 @@ import './Header.css';
 import Logo from "../Imagenes/Logo.jsx";
 import Navbar from "../Navbar/Navbar.jsx";
 import { FaSearch } from 'react-icons/fa';
+
 const Header = () => {
     const [isMobile, setIsMobile] = useState(false);
     const [isSearchActive, setIsSearchActive] = useState(false);
