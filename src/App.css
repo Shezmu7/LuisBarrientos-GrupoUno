@@ -1,8 +1,22 @@
+/* styles.css */
+body {
+  background-image: url('public/Image/fondo.png'); /* Ruta a tu imagen */
+  background-size: cover; /* La imagen cubrirá todo el fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-attachment: fixed; /* La imagen permanecerá fija al hacer scroll */
+  background-position: center; /* Centra la imagen */
+  margin: 0; /* Elimina márgenes por defecto */
+  height: 100vh; /* Asegura que el fondo cubra toda la ventana */
+  width: 100%;
+}
+
 #root {
-  max-width: 1280px;
+  width: 100%;
+  max-width: 1500px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
   text-align: center;
+  background-color: rgba(0, 0, 255, 0.2);
 }
 
 .logo {

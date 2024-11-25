@@ -52,6 +52,7 @@ const ServicePage = () => {
                 Estamos aquí para ayudarte.</p>
             {submitted ? (
                 <div className="thank-you-message">
+                    <img src="/Image/graciasporcontactarnos.png" alt="Gracias" className="thanks-image"/>
                     <h2>¡Gracias por contactarnos!</h2>
                     <p>Hemos recibido tu mensaje. Nos pondremos en contacto contigo pronto.</p>
                 </div>

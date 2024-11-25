@@ -34,12 +34,11 @@ const Navbar = () => {
                 </span>
                 {isCategoriasOpen && (
                     <div className="dropdown-menu">
-                        <Link to="/category/buzo">Buzos</Link>
                         <Link to="/category/Pantalones">Pantalones</Link>
                         <Link to="/category/Ternos">Ternos</Link>
                         <Link to="/category/Blazer">Blazer</Link>
                         <Link to="/category/Camisas">Camisas</Link>
-                        <Link to="/category/conjuntos">Conjuntos</Link>
+                        <Link to="/category/Favoritos">Favoritos</Link>
                         <Link to="/category/Vestidos">Vestidos</Link>
                     </div>
                 )}

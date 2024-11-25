@@ -159,6 +159,116 @@ export const products = [
         category: 'Ternos',
         sizes: ['S', 'M', 'L', 'XL']
     },
+    {
+        id: 17,
+        name: 'Pantalon Cargo',
+        price: 17990,
+        description: 'Pantalon cargo negro con ajuste en tobillos',
+        stock: 5,
+        img: '/Image/pantaloncargoajustable.png',
+        category: 'Pantalones',
+        sizes: ['S', 'M', 'L', 'XL']
+    },
+    {
+        id: 18,
+        name: 'Cargo Desmontable',
+        price: 17990,
+        description: 'Pantalon cargo negro impermeable con desmonte para Short',
+        stock: 5,
+        img: '/Image/pantaloncargodesmontable.png',
+        category: 'Pantalones',
+        sizes: ['S', 'M', 'L', 'XL']
+    },
+    {
+        id: 19,
+        name: 'Pantalon Cargo',
+        price: 17990,
+        description: 'Pantalon cargo simple negro',
+        stock: 5,
+        img: '/Image/pantaloncargosimple.png',
+        category: 'Pantalones',
+        sizes: ['S', 'M', 'L', 'XL']
+    },
+    {
+        id: 20,
+        name: 'Vestido Celeste',
+        price: 17990,
+        description: 'Vestido de verano celeste',
+        stock: 5,
+        img: '/Image/vestidoceleste.png',
+        category: 'Vestidos',
+        sizes: ['S', 'M', 'L', 'XL']
+    },
+    {
+        id: 21,
+        name: 'Vestido Rojo',
+        price: 17990,
+        description: 'Vestido de verano rojo',
+        stock: 5,
+        img: '/Image/vestidorojo.png',
+        category: 'Vestidos',
+        sizes: ['S', 'M', 'L', 'XL']
+    },
+    {
+        id: 22,
+        name: 'Vestido rosa',
+        price: 17990,
+        description: 'Vestido de gala rosa',
+        stock: 5,
+        img: '/Image/vestidorosa.png',
+        category: 'Vestidos',
+        sizes: ['S', 'M', 'L', 'XL']
+    },
+    {
+        id: 23,
+        name: 'Vestido Morado',
+        price: 17990,
+        description: 'Vestido de gala morado',
+        stock: 5,
+        img: '/Image/vestidomorado.png',
+        category: 'Vestidos',
+        sizes: ['S', 'M', 'L', 'XL']
+    },
+    {
+        id: 24,
+        name: 'Vestido con sueter',
+        price: 17990,
+        description: 'Conjunto de mujer de vestido celeste con sueter celeste',
+        stock: 5,
+        img: '/Image/conjuntomujer.png',
+        category: 'Vestidos',
+        sizes: ['S', 'M', 'L', 'XL']
+    },
+    {
+        id: 25,
+        name: 'Pantalon Jogger',
+        price: 17990,
+        description: 'Pantalon Jogger cargo de color cafe',
+        stock: 5,
+        img: '/Image/pantalonjogger.png',
+        category: 'Pantalones',
+        sizes: ['S', 'M', 'L', 'XL']
+    },
+    {
+        id: 26,
+        name: 'Jogger celeste',
+        price: 17990,
+        description: 'Pantalon Jogger de jeans celeste',
+        stock: 5,
+        img: '/Image/jogger.png',
+        category: 'Pantalones',
+        sizes: ['S', 'M', 'L', 'XL']
+    },
+    {
+        id: 27,
+        name: 'Jogger Mujer',
+        price: 17990,
+        description: 'Pantalon Jogger cargo para mujer',
+        stock: 5,
+        img: '/Image/joggermujer.png',
+        category: 'Pantalones',
+        sizes: ['S', 'M', 'L', 'XL']
+    },
 ];
 
 export const getProducts = () => {

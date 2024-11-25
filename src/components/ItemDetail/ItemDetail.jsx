@@ -4,6 +4,7 @@ import { getProductById } from '../../data/asyncMock.jsx';
 import Loading from '../Loading/Loading.jsx';
 import useCartStore from '../../store/cartStore';
 import './ItemDetail.css';
+import ShopButton from "../Buttons/Button.jsx";
 
 export default function ItemDetail() {
     const { productId } = useParams();
@@ -88,9 +89,7 @@ export default function ItemDetail() {
                     <p className="product-price">Precio: ${product.price}</p>
                     <p className="total-price">Total: ${product.price * quantity}</p>
 
-                    <button onClick={handleAddToCart} className="buy-button">
-                        Comprar
-                    </button>
+                    <ShopButton onClick={handleAddToCart} />
                 </div>
             </div>
         </div>

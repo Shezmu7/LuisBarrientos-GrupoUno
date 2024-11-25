@@ -3,7 +3,7 @@
     margin: 0 auto;
     padding: 2.5rem 1rem;
     text-align: center;
-    color: dimgray;
+    color: white;
 }
 
 .contact-title {
@@ -15,7 +15,7 @@
 .contact-description {
     font-size: 1.25rem;
     margin-bottom: 2rem;
-    color: gray;
+    color: white;
 }
 
 .contact-info {
@@ -26,10 +26,16 @@
 }
 
 .contact-item {
-    background-color: white;
+    background: linear-gradient(
+            135deg,
+            rgba(109, 2, 146, 0.8) 0%,
+            rgba(255, 174, 0, 0.8) 50%,
+            rgba(0, 255, 251, 0.8) 100%
+    );
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 1.5rem;
     border-radius: 0.5rem;
+
 }
 
 .contact-subtitle {

@@ -3,6 +3,7 @@ import Item from "../Item/Item";
 import { getProducts } from "../../data/asyncMock";
 import Loading from "../Loading/Loading";
 import "./ItemList.css";
+import Cards from "../Cards/Cards.jsx";
 
 export default function ItemList({ products: initialProducts }) {
     const [products, setProducts] = useState(initialProducts || []);
@@ -28,10 +29,13 @@ export default function ItemList({ products: initialProducts }) {
             ) : (
                 <div className="item-list">
                     {products.map((prod) => (
-                        <Item {...prod} key={prod.id} />
+                        <Cards key={prod.id}>
+                            <Item {...prod} /> {/* Item se renderiza como hijo */}
+                        </Cards>
                     ))}
                 </div>
             )}
         </>
     );
 }
+

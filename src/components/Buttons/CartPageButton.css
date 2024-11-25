@@ -1,0 +1,68 @@
+.button {
+    --width: 100px;
+    --height: 35px;
+    --gap-between-tooltip-to-button: 18px;
+    --button-color: darkblue;
+    width: var(--width);
+    height: var(--height);
+    background: var(--button-color);
+    position: relative;
+    text-align: center;
+    border-radius: 0.45em;
+    font-family: "Arial";
+    transition: background 0.3s;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    margin: 0 auto; /* Centra el botón */
+    display: block; /* Centra el botón */
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-wrapper,
+.text,
+.icon {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    color: white;
+}
+
+.text {
+    top: 0;
+}
+
+.text,
+.icon {
+    transition: top 0.5s;
+}
+
+.icon {
+    color: white;
+    top: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.button:hover {
+    background: blue; /* Cambia ligeramente el color en hover */
+}
+
+.button:hover .text {
+    top: -100%;
+}
+
+.button:hover .icon {
+    top: 0;
+}
