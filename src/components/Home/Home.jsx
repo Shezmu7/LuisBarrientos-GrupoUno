@@ -27,6 +27,7 @@ export default function HomePage() {
                 style={{ backgroundImage: `url(${bannerImages[currentBanner]})` }}
             >
                 <marquee></marquee>
+
                 <div className="banner-content">
                     <h2 className="banner-title">
                         <Logo imgurl={"public/luna.png"} />

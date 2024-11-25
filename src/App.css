@@ -1,6 +1,6 @@
 /* styles.css */
 body {
-  background-image: url('public/Image/fondo.png'); /* Ruta a tu imagen */
+  background-image: url('public/fondo.png'); /* Ruta a tu imagen */
   background-size: cover; /* La imagen cubrirá todo el fondo */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
   background-attachment: fixed; /* La imagen permanecerá fija al hacer scroll */

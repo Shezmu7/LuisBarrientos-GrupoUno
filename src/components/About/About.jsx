@@ -52,7 +52,7 @@ const AboutPage = () => {
             <div className="sobre-nosotros-team">
                 <h2>Conoce al Equipo</h2>
                 <div className="team-member">
-                    <img src="/luis.jpg" alt="Miembro 1" className="team-image" />
+                    <img src="/luis.jpg" alt="presidente" className="team-image" />
                     <p className="team-name">Luis Barrientos</p>
                     <p className="team-role">Presidente</p>
                 </div>
