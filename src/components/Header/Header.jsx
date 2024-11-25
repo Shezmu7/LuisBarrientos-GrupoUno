@@ -31,7 +31,7 @@ const Header = () => {
 
     return (
         <header className="header">
-            <Logo imgurl={"public/Image/lunaazulnavbar.png"} />
+            <Logo imgurl={"public/lunaazulnavbar.png"} />
             <Navbar />
             <div className="search-bar">
                 {isMobile ? (

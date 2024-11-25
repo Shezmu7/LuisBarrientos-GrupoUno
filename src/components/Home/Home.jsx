@@ -5,8 +5,8 @@ import "./Home.css";
 import Logo from "../Imagenes/Logo.jsx";
 
 const bannerImages = [
-    "/Image/banner1.jpg",
-    "/Image/banner2.png",
+    "/banner1.jpg",
+    "/banner2.png",
 ];
 
 export default function HomePage() {
@@ -29,10 +29,10 @@ export default function HomePage() {
                 <marquee></marquee>
                 <div className="banner-content">
                     <h2 className="banner-title">
-                        <Logo imgurl={"public/Image/luna.png"} />
+                        <Logo imgurl={"public/luna.png"} />
                     </h2>
                     <h2 className="banner-title">
-                        <Logo imgurl={"public/Image/azul.png"} />
+                        <Logo imgurl={"public/azul.png"} />
                     </h2>
                     <Button to="/products">Comprar</Button>
                 </div>

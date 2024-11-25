@@ -5,7 +5,7 @@ export const products = [
         price: 27990,
         description: 'Pantalon formal con blazer sin camisa ni corbata.',
         stock: 10,
-        img: '/Image/ternosincamisa.png',
+        img: '/ternosincamisa.png',
         category: 'Ternos',
         sizes: ['S', 'M', 'L', 'XL']
     },
@@ -15,7 +15,7 @@ export const products = [
         price: 42990,
         description: 'Traje de terno completo.',
         stock: 5,
-        img: '/Image/ternocompleto.png',
+        img: '/ternocompleto.png',
         category: 'Ternos',
         sizes: ['S', 'M', 'L', 'XL']
     },
@@ -25,7 +25,7 @@ export const products = [
         price: 24990,
         description: 'Blazer con camisa blanca y corbata',
         stock: 5,
-        img: '/Image/blazerconcamisa.png',
+        img: '/blazerconcamisa.png',
         category: 'Blazer',
         sizes: ['S', 'M', 'L', 'XL']
     },
@@ -35,7 +35,7 @@ export const products = [
         price: 37990,
         description: 'Terno completo rojo',
         stock: 5,
-        img: '/Image/ternocompletorojo.png',
+        img: '/ternocompletorojo.png',
         category: 'Ternos',
         sizes: ['S', 'M', 'L', 'XL']
     },
@@ -45,7 +45,7 @@ export const products = [
         price: 29990,
         description: 'Blazer rojo con camisa negra',
         stock: 5,
-        img: '/Image/blazerrojoconcamisa.png',
+        img: '/blazerrojoconcamisa.png',
         category: 'Blazer',
         sizes: ['S', 'M', 'L', 'XL']
     },
@@ -55,7 +55,7 @@ export const products = [
         price: 15990,
         description: 'Camisa de mangas largas de color lila',
         stock: 5,
-        img: '/Image/camisalila.png',
+        img: '/camisalila.png',
         category: 'Camisas',
         sizes: ['S', 'M', 'L', 'XL']
     },
@@ -65,7 +65,7 @@ export const products = [
         price: 21990,
         description: 'Blazer de color rojo claro con dobles negro',
         stock: 5,
-        img: '/Image/blazerrojo.png',
+        img: '/blazerrojo.png',
         category: 'Blazer',
         sizes: ['S', 'M', 'L', 'XL']
     },
@@ -75,7 +75,7 @@ export const products = [
         price: 14990,
         description: 'Terno completo azul para niños',
         stock: 5,
-        img: '/Image/ternoazulninos.png',
+        img: '/ternoazulninos.png',
         category: 'Ternos',
         sizes: ['XS', 'S', 'M', 'L']
     },
@@ -85,7 +85,7 @@ export const products = [
         price: 20990,
         description: 'Blazer gris con camisa blanca y corbata',
         stock: 5,
-        img: '/Image/blazergrisconcamisa.png',
+        img: '/blazergrisconcamisa.png',
         category: 'Blazer',
         sizes: ['S', 'M', 'L', 'XL']
     },
@@ -95,7 +95,7 @@ export const products = [
         price: 16990,
         description: 'Camisa celeste de mangas largas',
         stock: 5,
-        img: '/Image/camisaceleste.png',
+        img: '/camisaceleste.png',
         category: 'Camisas',
         sizes: ['S', 'M', 'L', 'XL']
     },
@@ -105,7 +105,7 @@ export const products = [
         price: 15990,
         description: 'Camisa celeste de mangas cortas',
         stock: 5,
-        img: '/Image/camisacelestesinmangas.png',
+        img: '/camisacelestesinmangas.png',
         category: 'Camisas',
         sizes: ['S', 'M', 'L', 'XL']
     },
@@ -115,7 +115,7 @@ export const products = [
         price: 31990,
         description: 'Vestido de Gala de color azul',
         stock: 5,
-        img: '/Image/vestidoazul.png',
+        img: '/vestidoazul.png',
         category: 'Vestidos',
         sizes: ['S', 'M', 'L', 'XL']
     },
@@ -125,7 +125,7 @@ export const products = [
         price: 19990,
         description: 'blazer negro',
         stock: 5,
-        img: '/Image/blazernegro.png',
+        img: '/blazernegro.png',
         category: 'Blazer',
         sizes: ['S', 'M', 'L', 'XL']
     },
@@ -135,7 +135,7 @@ export const products = [
         price: 16990,
         description: 'Camisa gris con mangas largas',
         stock: 5,
-        img: '/Image/camisagrisconmangas.png',
+        img: '/camisagrisconmangas.png',
         category: 'Camisas',
         sizes: ['S', 'M', 'L', 'XL']
     },
@@ -145,7 +145,7 @@ export const products = [
         price: 17990,
         description: 'Camisa negra con cuello morado',
         stock: 5,
-        img: '/Image/camisaconcuellomorado.png',
+        img: '/camisaconcuellomorado.png',
         category: 'Camisas',
         sizes: ['S', 'M', 'L', 'XL']
     },
@@ -155,7 +155,7 @@ export const products = [
         price: 17990,
         description: 'Traje de 3 piezas con camisa',
         stock: 5,
-        img: '/Image/trajecompleto.png',
+        img: '/trajecompleto.png',
         category: 'Ternos',
         sizes: ['S', 'M', 'L', 'XL']
     },
@@ -165,7 +165,7 @@ export const products = [
         price: 17990,
         description: 'Pantalon cargo negro con ajuste en tobillos',
         stock: 5,
-        img: '/Image/pantaloncargoajustable.png',
+        img: '/pantaloncargoajustable.png',
         category: 'Pantalones',
         sizes: ['S', 'M', 'L', 'XL']
     },
@@ -175,7 +175,7 @@ export const products = [
         price: 17990,
         description: 'Pantalon cargo negro impermeable con desmonte para Short',
         stock: 5,
-        img: '/Image/pantaloncargodesmontable.png',
+        img: '/pantaloncargodesmontable.png',
         category: 'Pantalones',
         sizes: ['S', 'M', 'L', 'XL']
     },
@@ -185,7 +185,7 @@ export const products = [
         price: 17990,
         description: 'Pantalon cargo simple negro',
         stock: 5,
-        img: '/Image/pantaloncargosimple.png',
+        img: '/pantaloncargosimple.png',
         category: 'Pantalones',
         sizes: ['S', 'M', 'L', 'XL']
     },
@@ -195,7 +195,7 @@ export const products = [
         price: 17990,
         description: 'Vestido de verano celeste',
         stock: 5,
-        img: '/Image/vestidoceleste.png',
+        img: '/vestidoceleste.png',
         category: 'Vestidos',
         sizes: ['S', 'M', 'L', 'XL']
     },
@@ -205,7 +205,7 @@ export const products = [
         price: 17990,
         description: 'Vestido de verano rojo',
         stock: 5,
-        img: '/Image/vestidorojo.png',
+        img: '/vestidorojo.png',
         category: 'Vestidos',
         sizes: ['S', 'M', 'L', 'XL']
     },
@@ -215,7 +215,7 @@ export const products = [
         price: 17990,
         description: 'Vestido de gala rosa',
         stock: 5,
-        img: '/Image/vestidorosa.png',
+        img: '/vestidorosa.png',
         category: 'Vestidos',
         sizes: ['S', 'M', 'L', 'XL']
     },
@@ -225,7 +225,7 @@ export const products = [
         price: 17990,
         description: 'Vestido de gala morado',
         stock: 5,
-        img: '/Image/vestidomorado.png',
+        img: '/vestidomorado.png',
         category: 'Vestidos',
         sizes: ['S', 'M', 'L', 'XL']
     },
@@ -235,7 +235,7 @@ export const products = [
         price: 17990,
         description: 'Conjunto de mujer de vestido celeste con sueter celeste',
         stock: 5,
-        img: '/Image/conjuntomujer.png',
+        img: '/conjuntomujer.png',
         category: 'Vestidos',
         sizes: ['S', 'M', 'L', 'XL']
     },
@@ -245,7 +245,7 @@ export const products = [
         price: 17990,
         description: 'Pantalon Jogger cargo de color cafe',
         stock: 5,
-        img: '/Image/pantalonjogger.png',
+        img: '/pantalonjogger.png',
         category: 'Pantalones',
         sizes: ['S', 'M', 'L', 'XL']
     },
@@ -255,7 +255,7 @@ export const products = [
         price: 17990,
         description: 'Pantalon Jogger de jeans celeste',
         stock: 5,
-        img: '/Image/jogger.png',
+        img: '/jogger.png',
         category: 'Pantalones',
         sizes: ['S', 'M', 'L', 'XL']
     },
@@ -265,7 +265,7 @@ export const products = [
         price: 17990,
         description: 'Pantalon Jogger cargo para mujer',
         stock: 5,
-        img: '/Image/joggermujer.png',
+        img: '/joggermujer.png',
         category: 'Pantalones',
         sizes: ['S', 'M', 'L', 'XL']
     },

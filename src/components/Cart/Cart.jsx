@@ -13,7 +13,7 @@ export default function CartPage() {
         return (
             <div className="cart-empty">
                 <img
-                    src="/Image/carro-vacio.png"
+                    src="/carro-vacio.png"
                     alt="Carrito vacío"
                     className="empty-cart-image"
                 />
