@@ -5,7 +5,7 @@ const Cards = ({ children }) => {
     return (
         <div className="card">
             <div className="card2">
-                {children} {/* Renderiza el contenido dentro de la tarjeta */}
+                {children}
             </div>
         </div>
     );

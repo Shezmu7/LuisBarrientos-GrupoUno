@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "./Category.css";
-import { getProductByCategory } from "../../data/asyncMock";
-import ItemList from "../ItemList/ItemList";
-import Loading from "../Loading/Loading";
+import { getProductByCategory } from "../../data/asyncMock.jsx";
+import ItemList from "../ItemList/ItemList.jsx";
+import Loading from "../Loading/Loading.jsx";
 
 export default function ProductsCategory() {
     const [loading, setLoading] = useState(true);

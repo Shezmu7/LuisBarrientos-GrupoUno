@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Service.css';
-import Loading from '../Loading/Loading';
+import Loading from '../Loading/Loading.jsx';
 
 const ServicePage = () => {
     const [formData, setFormData] = useState({

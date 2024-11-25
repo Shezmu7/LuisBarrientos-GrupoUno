@@ -3,7 +3,7 @@ import './Header.css';
 import Logo from "../Imagenes/Logo.jsx";
 import Navbar from "../Navbar/Navbar.jsx";
 import { FaSearch, FaShoppingCart } from 'react-icons/fa';
-import useCartStore from '../../store/cartStore';
+import useCartStore from "../../store/CartStore.jsx";
 import CartPageButton from "../Buttons/CartPageButton.jsx";
 
 const Header = () => {

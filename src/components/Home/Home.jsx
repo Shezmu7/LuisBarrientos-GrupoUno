@@ -1,24 +1,23 @@
 import React, { useState, useEffect } from "react";
-import ItemList from "../ItemList/ItemList";
+import ItemList from "../Itemlist/ItemList.jsx";
 import Button from "../Buttons/BannerButton.jsx";
 import "./Home.css";
 import Logo from "../Imagenes/Logo.jsx";
 
 const bannerImages = [
     "/Image/banner1.jpg",
-    "/Image/banner2.png", // Segunda imagen del banner
+    "/Image/banner2.png",
 ];
 
 export default function HomePage() {
     const [currentBanner, setCurrentBanner] = useState(0);
 
-    // Cambiar la imagen del banner cada 3 segundos
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentBanner((prev) => (prev + 1) % bannerImages.length);
         }, 3000);
 
-        return () => clearInterval(interval); // Limpiar intervalo al desmontar
+        return () => clearInterval(interval);
     }, []);
 
     return (

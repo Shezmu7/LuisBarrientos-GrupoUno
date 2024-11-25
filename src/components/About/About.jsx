@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./About.css";
-import Loading from "../Loading/Loading";
+import Loading from "../Loading/Loading.jsx";
 
 const AboutPage = () => {
     const [loading, setLoading] = useState(true);

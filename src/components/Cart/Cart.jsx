@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import useCartStore from '../../store/cartStore';
+import useCartStore from "../../store/CartStore.jsx";
 import './Cart.css';
 
 export default function CartPage() {

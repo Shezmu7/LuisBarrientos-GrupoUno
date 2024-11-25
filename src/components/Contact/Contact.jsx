@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaDiscord } from 'react-icons/fa';
 import './Contact.css';
-import Loading from "../Loading/Loading";
+import Loading from "../Loading/Loading.jsx";
 
 export default function ContactPage() {
     const [loading, setLoading] = useState(true);

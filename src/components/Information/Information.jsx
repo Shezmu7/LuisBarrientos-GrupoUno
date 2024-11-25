@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Information.css";
 import { Link } from 'react-router-dom';
-import Loading from "../Loading/Loading";
+import Loading from "../Loading/Loading.jsx";
 
 const InformationPage = () => {
     const [loading, setLoading] = useState(true);

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Item from "../Item/Item";
-import { getProducts } from "../../data/asyncMock";
-import Loading from "../Loading/Loading";
+import Item from "../Item/Item.jsx";
+import { getProducts } from "../../data/asyncMock.jsx";
+import Loading from "../Loading/Loading.jsx";
 import "./ItemList.css";
 import Cards from "../Cards/Cards.jsx";
 
@@ -30,7 +30,7 @@ export default function ItemList({ products: initialProducts }) {
                 <div className="item-list">
                     {products.map((prod) => (
                         <Cards key={prod.id}>
-                            <Item {...prod} /> {/* Item se renderiza como hijo */}
+                            <Item {...prod} />
                         </Cards>
                     ))}
                 </div>

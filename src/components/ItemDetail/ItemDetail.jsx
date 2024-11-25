@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getProductById } from '../../data/asyncMock.jsx';
 import Loading from '../Loading/Loading.jsx';
-import useCartStore from '../../store/cartStore';
+import useCartStore from "../../store/CartStore.jsx";
 import './ItemDetail.css';
 import ShopButton from "../Buttons/Button.jsx";
 
