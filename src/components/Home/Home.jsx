@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import ItemList from "../Itemlist/ItemList.jsx";
+import ItemList from "../ItemList/ItemList.jsx";
 import Button from "../Buttons/BannerButton.jsx";
 import "./Home.css";
 import Logo from "../Imagenes/Logo.jsx";
