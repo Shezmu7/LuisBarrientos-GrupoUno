@@ -26,8 +26,8 @@
                 /* bottom-right 2 */ 0 100%
     );
     transition: color 250ms;
-    width: auto; /* Ancho ajustado al contenido */
-    max-width: 150px; /* Limitar ancho máximo */
+    width: auto;
+    max-width: 150px;
     margin: 0 auto;
 }
 
