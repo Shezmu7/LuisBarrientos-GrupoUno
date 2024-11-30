@@ -2,14 +2,14 @@ import React, { useState, useEffect } from 'react';
 import './Header.css';
 import Logo from "../Imagenes/Logo.jsx";
 import Navbar from "../Navbar/Navbar.jsx";
-import { FaSearch, FaShoppingCart } from 'react-icons/fa';
+import { FaSearch, FaShoppingCart, FaBars } from 'react-icons/fa';
 import useCartStore from "../../store/CartStore.jsx";
 import CartPageButton from "../Buttons/CartPageButton.jsx";
 
 const Header = () => {
     const [isMobile, setIsMobile] = useState(false);
     const [isSearchActive, setIsSearchActive] = useState(false);
-    const [isCartOpen, setIsCartOpen] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
     const { cart } = useCartStore();
 
     useEffect(() => {
@@ -25,14 +25,22 @@ const Header = () => {
         setIsSearchActive(!isSearchActive);
     };
 
-    const toggleCartDropdown = () => {
-        setIsCartOpen(!isCartOpen);
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
     };
 
     return (
         <header className="header">
+            {isMobile && (
+                <FaBars className="menu-icon" onClick={toggleMenu} />
+            )}
             <Logo imgurl={"public/lunaazulnavbar.png"} />
-            <Navbar />
+            {!isMobile && <Navbar />}
+            {isMobile && isMenuOpen && (
+                <div className="mobile-menu">
+                    <Navbar isMobile={true} />
+                </div>
+            )}
             <div className="search-bar">
                 {isMobile ? (
                     isSearchActive ? (
@@ -49,15 +57,16 @@ const Header = () => {
                     <input type="text" placeholder="Buscar productos" />
                 )}
             </div>
-            <div className="cart-section">
-                <FaShoppingCart
-                    onClick={toggleCartDropdown}
-                    className="cart-icon"
-                />
+            <div
+                className="cart-section"
+                onMouseEnter={() => setIsMenuOpen(true)}
+                onMouseLeave={() => setIsMenuOpen(false)}
+            >
+                <FaShoppingCart className="cart-icon" />
                 {cart.length > 0 && (
                     <span className="cart-count">{cart.length}</span>
                 )}
-                {isCartOpen && (
+                {isMenuOpen && (
                     <div className="cart-dropdown">
                         {cart.length === 0 ? (
                             <p>El carrito está vacío</p>

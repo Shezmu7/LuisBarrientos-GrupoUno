@@ -32,7 +32,7 @@ export default function ContactPage() {
 
             <div className="contact-info">
                 <div className="contact-item">
-                    <h2 className="contact-subtitle">Teléfonos</h2>
+                    <h2 className="contact-subtitle">Teléfono</h2>
                     <p className="contact-detail">+56 9 3103 8084</p>
                     <p className="contact-detail">+56 9 3103 8084</p>
                     <p className="contact-detail">+56 9 3103 8084</p>

@@ -31,7 +31,12 @@ export default function ItemDetail() {
 
     const handleAddToCart = () => {
         if (product && selectedSize) {
-            addToCart(product, quantity, selectedSize);
+            const stockAvailable = product.stock;
+            if (quantity > stockAvailable) {
+                alert(`Solo hay ${stockAvailable} unidades disponibles.`);
+            } else {
+                addToCart(product, quantity, selectedSize);
+            }
         }
     };
 
@@ -74,7 +79,7 @@ export default function ItemDetail() {
                             ))}
                         </ul>
                     </div>
-                    <p className="product-stock">Stock: {product.stock}</p>
+                    <p className="product-stock">Stock por Talla: {product.stock}</p>
 
                     <div className="quantity-controls">
                         <button onClick={decrementQuantity} className="quantity-btn">

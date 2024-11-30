@@ -46,10 +46,21 @@ const InformationPage = () => {
             </div>
 
             <div className="contact-link">
+                <p>¿Tienes problemas con la pagina o tus productos?</p>
+                <button>
+                    <Link to="/service" className="contact-button">
+                        Envianos un mensaje
+                    </Link>
+                </button>
+            </div>
+
+            <div className="contact-link">
                 <p>¿Tienes preguntas o necesitas asistencia?</p>
-                <Link to="/contact" className="contact-button">
-                    Contacta con nosotros
-                </Link>
+                <button>
+                    <Link to="/contact" className="contact-button">
+                        Contacta con nosotros
+                    </Link>
+                </button>
             </div>
 
             <div className="informacion-section">

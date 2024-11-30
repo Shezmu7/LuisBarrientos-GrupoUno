@@ -15,7 +15,7 @@ export default function HomePage() {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentBanner((prev) => (prev + 1) % bannerImages.length);
-        }, 3000);
+        }, 7000);
 
         return () => clearInterval(interval);
     }, []);
@@ -24,22 +24,26 @@ export default function HomePage() {
         <div>
             <div
                 className="banner"
-                style={{ backgroundImage: `url(${bannerImages[currentBanner]})` }}
+                style={{backgroundImage: `url(${bannerImages[currentBanner]})`}}
             >
-                <marquee></marquee>
 
                 <div className="banner-content">
                     <h2 className="banner-title">
-                        <Logo imgurl={"public/luna.png"} />
+                        <Logo imgurl={"public/luna.png"}/>
                     </h2>
                     <h2 className="banner-title">
-                        <Logo imgurl={"public/azul.png"} />
+                        <Logo imgurl={"public/azul.png"}/>
                     </h2>
                     <Button to="/products">Comprar</Button>
                 </div>
             </div>
+            <div className="marquee-container">
+                <div className="marquee-text">
+                    Viaja con estilo. Luna Azul, tu tienda de elegancia.
+                </div>
+            </div>
             <div className="item-list-container">
-                <ItemList />
+                <ItemList/>
             </div>
         </div>
     );

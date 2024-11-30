@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
 import Imagen from "../Imagenes/Imagen.jsx";
+import { FaInfoCircle, FaPhone, FaRegQuestionCircle, FaUserFriends } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -15,10 +16,18 @@ const Footer = () => {
                     <p>(LA)</p>
                 </div>
                 <div className="footer-links">
-                    <Link to="/about">Sobre nosotros</Link>
-                    <Link to="/contact">Acerca de</Link>
-                    <Link to="/information">Información</Link>
-                    <Link to="/service">Atención al cliente</Link>
+                    <Link to="/about">
+                        <FaUserFriends /> Sobre nosotros
+                    </Link>
+                    <Link to="/contact">
+                        <FaPhone /> Contactos
+                    </Link>
+                    <Link to="/information">
+                        <FaInfoCircle /> Información
+                    </Link>
+                    <Link to="/service">
+                        <FaRegQuestionCircle /> Atención al cliente
+                    </Link>
                 </div>
             </div>
         </footer>

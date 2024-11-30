@@ -4,7 +4,7 @@ import './Button.css'
 const ShopButton = ({ onClick }) => {
     return (
         <button className="cta" onClick={onClick}>
-            <span className="hover-underline-animation"> Comprar</span>
+            <span className="hover-underline-animation"> Añadir al carrito</span>
             <svg
                 id="arrow-horizontal"
                 xmlns="http://www.w3.org/2000/svg"
@@ -25,4 +25,4 @@ const ShopButton = ({ onClick }) => {
 
 export default ShopButton;
 
-//Usado en ItemDetail
+//Usado en ItemDetail principalmente y reutilizado en otros botones

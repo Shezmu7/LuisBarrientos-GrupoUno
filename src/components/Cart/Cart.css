@@ -74,7 +74,11 @@
 
 .clear-btn {
     background-color: darkblue;
+    margin-top: 50px;
     color: white;
+    padding: 10px;
+    margin-bottom: 52px;
+    border: 1px solid gray;
 }
 
 .clear-btn:hover {
@@ -164,6 +168,7 @@
     cursor: pointer;
     border: none;
     transition: background-color 0.3s;
+
 }
 
 .shop-now-btn:hover {
@@ -183,3 +188,53 @@
     max-width: 300px;
     margin-bottom: 20px;
 }
+
+.delete-button {
+    width: 50px;
+    height: 40px;
+    border-radius: 30%;
+    background-color: black;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.delete-icon {
+    width: 12px;
+    transition: 0.3s;
+    fill: white;
+}
+
+.delete-button:hover {
+    background-color: blue;
+    width: 140px;
+    height: 40px;
+    border-radius: 25px;
+}
+
+.delete-button:hover .delete-icon {
+    width: 50px;
+    transform: translateY(60%);
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-btn {
+    background-color: darkmagenta;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.quantity-btn:hover {
+    color: white;
+}
+
