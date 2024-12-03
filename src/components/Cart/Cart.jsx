@@ -41,9 +41,19 @@ export default function CartPage() {
         }));
     };
 
+    const calculateSelectedTotal = () => {
+        return cart.reduce((total, item) => {
+            const key = generateKey(item.id, item.size);
+            if (selectedItems[key]) {
+                return total + item.price * quantities[key];
+            }
+            return total;
+        }, 0);
+    };
+
     if (loading) {
         return (
-            <div className="loading-container">
+            <div>
                 <Loading />
             </div>
         );
@@ -67,7 +77,7 @@ export default function CartPage() {
     return (
         <div className="cart-container">
             <h1>Carrito</h1>
-            <ul className="cart-list">
+            <ul>
                 {cart.map((item) => {
                     const key = generateKey(item.id, item.size);
                     return (
@@ -112,6 +122,9 @@ export default function CartPage() {
                 })}
             </ul>
             <div className="cart-actions">
+                <div className="total-box">
+                    <p>Total: ${calculateSelectedTotal()}</p>
+                </div>
                 <button className="clear-btn" onClick={clearCart}>
                     Vaciar carrito
                 </button>

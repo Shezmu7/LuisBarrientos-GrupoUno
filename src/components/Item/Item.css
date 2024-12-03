@@ -12,7 +12,7 @@
 }
 
 .item-name {
-    font-size: 19px;
+    font-size: 17px;
     font-weight: bold;
     margin: 1px 0;
     letter-spacing: 1px;
@@ -27,7 +27,7 @@
 }
 
 .item-price {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: bold;
     margin-bottom: 20px;
     color: white;

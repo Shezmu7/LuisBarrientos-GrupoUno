@@ -39,9 +39,18 @@ export default function HomePage() {
             </div>
             <div className="marquee-container">
                 <div className="marquee-text">
-                    Viaja con estilo. Luna Azul, tu tienda de elegancia.
+                    Luna Azul, que tu viaje por la galaxia sea con elegancia.
                 </div>
             </div>
+            <marquee>
+                <div>
+                    <img
+                        src="/public/giphy.gif"
+                        alt="gif"
+                        className="marquee-image"
+                    />
+                </div>
+            </marquee>
             <div className="item-list-container">
                 <ItemList/>
             </div>

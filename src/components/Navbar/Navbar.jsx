@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaHome, FaTags, FaStore, FaShoppingCart, FaUser, FaCaretDown, FaCaretUp } from 'react-icons/fa';
+import { FaHome, FaTags, FaStore, FaShoppingCart, FaCaretDown, FaCaretUp } from 'react-icons/fa';
 import './Navbar.css';
 
 const Navbar = ({ isMobile = false }) => {
@@ -38,9 +38,6 @@ const Navbar = ({ isMobile = false }) => {
             </Link>
             <Link to="/carro" className="navbar-link">
                 {isMobile ? <FaShoppingCart /> : 'Carro'}
-            </Link>
-            <Link to="/cuenta" className="navbar-link">
-                {isMobile ? <FaUser /> : 'Cuenta'}
             </Link>
         </nav>
     );

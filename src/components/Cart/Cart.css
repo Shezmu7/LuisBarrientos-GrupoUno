@@ -13,13 +13,14 @@
 }
 
 .cart-item {
+    margin-top: 8px;
     display: flex;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);
     transition: transform 0.3s ease;
 }
+
 
 .cart-item:hover {
     transform: translateY(-5px);
@@ -175,15 +176,6 @@
     background-color: #0056b3;
 }
 
-.motivational-message {
-    margin-top: 20px;
-}
-
-.motivational-message p {
-    font-size: 16px;
-    color: white;
-}
-
 .empty-cart-image {
     max-width: 300px;
     margin-bottom: 20px;
@@ -210,14 +202,10 @@
 
 .delete-button:hover {
     background-color: blue;
-    width: 140px;
-    height: 40px;
-    border-radius: 25px;
 }
 
 .delete-button:hover .delete-icon {
     width: 50px;
-    transform: translateY(60%);
 }
 
 .quantity-control {
@@ -238,3 +226,19 @@
     color: white;
 }
 
+.cart-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.total-box {
+    margin-top: 10px;
+    padding: 0 25px;
+    background-color: blue;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}

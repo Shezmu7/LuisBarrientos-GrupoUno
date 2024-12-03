@@ -6,33 +6,12 @@
     color: white;
     width: 100%;
     box-sizing: border-box;
-    background-color: darkgrey;
+    background-color: darkmagenta;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
-    height: 60px;
-}
-
-.search-bar {
-    flex: 1;
-    display: flex;
-    justify-content: end;
-    margin: 0 35px;
-}
-
-.search-bar input {
-    width: 100%;
-    max-width: 350px;
-    padding: 10px;
-    border: none;
-    border-radius: 40px;
-}
-
-.navbar {
-    display: flex;
-    gap: 15px;
-    font-size: 20px;
+    height: 50px;
 }
 
 .navbar a {

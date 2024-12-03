@@ -2,13 +2,12 @@ import React, { useState, useEffect } from 'react';
 import './Header.css';
 import Logo from "../Imagenes/Logo.jsx";
 import Navbar from "../Navbar/Navbar.jsx";
-import { FaSearch, FaShoppingCart, FaBars } from 'react-icons/fa';
+import {FaShoppingCart, FaBars } from 'react-icons/fa';
 import useCartStore from "../../store/CartStore.jsx";
 import CartPageButton from "../Buttons/CartPageButton.jsx";
 
 const Header = () => {
     const [isMobile, setIsMobile] = useState(false);
-    const [isSearchActive, setIsSearchActive] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const { cart } = useCartStore();
 
@@ -20,10 +19,6 @@ const Header = () => {
         handleResize();
         return () => window.removeEventListener('resize', handleResize);
     }, []);
-
-    const toggleSearch = () => {
-        setIsSearchActive(!isSearchActive);
-    };
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -41,22 +36,6 @@ const Header = () => {
                     <Navbar isMobile={true} />
                 </div>
             )}
-            <div className="search-bar">
-                {isMobile ? (
-                    isSearchActive ? (
-                        <input
-                            type="text"
-                            placeholder="Buscar productos"
-                            onBlur={() => setIsSearchActive(false)}
-                            autoFocus
-                        />
-                    ) : (
-                        <FaSearch onClick={toggleSearch} style={{ cursor: 'pointer' }} />
-                    )
-                ) : (
-                    <input type="text" placeholder="Buscar productos" />
-                )}
-            </div>
             <div
                 className="cart-section"
                 onMouseEnter={() => setIsMenuOpen(true)}

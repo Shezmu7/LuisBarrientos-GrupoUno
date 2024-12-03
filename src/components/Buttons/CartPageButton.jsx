@@ -32,4 +32,4 @@ const CartPageButton = () => {
 
 export default CartPageButton;
 
-//Usado en el icono de la esquina del navbar
+//Usado en el icono de la esquina del Header

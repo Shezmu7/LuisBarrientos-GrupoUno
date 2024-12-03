@@ -59,7 +59,7 @@
     font-style: italic;
     text-transform: uppercase;
     letter-spacing: 3px;
-    animation: marquee 18s linear infinite;
+    animation: marquee 19.8s linear infinite;
 }
 
 @keyframes marquee {
