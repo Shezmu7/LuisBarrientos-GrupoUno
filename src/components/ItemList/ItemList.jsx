@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Item from "../Item/Item.jsx";
 import { getProducts } from "../../data/asyncMock.jsx";
 import Loading from "../Loading/Loading.jsx";
@@ -22,7 +22,6 @@ export default function ItemList({ products: initialProducts }) {
     }, [initialProducts]);
 
     const scrollToTop = () => {
-        console.log("Botón clickeado");
         window.scrollTo({ top: 0, behavior: "smooth" });
     };
 

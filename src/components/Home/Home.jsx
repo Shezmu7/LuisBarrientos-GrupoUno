@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import ItemList from "../ItemList/ItemList.jsx";
 import Button from "../Buttons/BannerButton.jsx";
 import "./Home.css";
@@ -11,6 +12,8 @@ const bannerImages = [
 
 export default function HomePage() {
     const [currentBanner, setCurrentBanner] = useState(0);
+    const [isHovered, setIsHovered] = useState(false);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -20,19 +23,22 @@ export default function HomePage() {
         return () => clearInterval(interval);
     }, []);
 
+    const handleMarqueeClick = () => {
+        navigate("/service");
+    };
+
     return (
         <div>
             <div
                 className="banner"
-                style={{backgroundImage: `url(${bannerImages[currentBanner]})`}}
+                style={{ backgroundImage: `url(${bannerImages[currentBanner]})` }}
             >
-
                 <div className="banner-content">
                     <h2 className="banner-title">
-                        <Logo imgurl={"public/luna.png"}/>
+                        <Logo imgurl={"public/luna.png"} />
                     </h2>
                     <h2 className="banner-title">
-                        <Logo imgurl={"public/azul.png"}/>
+                        <Logo imgurl={"public/azul.png"} />
                     </h2>
                     <Button to="/products">Comprar</Button>
                 </div>
@@ -43,16 +49,27 @@ export default function HomePage() {
                 </div>
             </div>
             <marquee>
-                <div>
+                <div
+                    className="marquee-hover-container"
+                    onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={() => setIsHovered(false)}
+                    onClick={handleMarqueeClick}
+                >
                     <img
                         src="/public/giphy.gif"
                         alt="gif"
                         className="marquee-image"
                     />
+                    {isHovered && (
+                        <div className="tooltip">
+                            ¿Necesitas ayuda?
+                            <li>Presioname...</li>
+                        </div>
+                    )}
                 </div>
             </marquee>
             <div className="item-list-container">
-                <ItemList/>
+                <ItemList />
             </div>
         </div>
     );

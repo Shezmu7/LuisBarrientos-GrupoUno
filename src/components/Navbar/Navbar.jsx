@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaHome, FaTags, FaStore, FaShoppingCart, FaCaretDown, FaCaretUp } from 'react-icons/fa';
 import './Navbar.css';

@@ -11,32 +11,30 @@ import ProductsCategory from './components/Category/Category';
 import ServicePage from "./components/Service/Service.jsx";
 import InformationPage from "./components/Information/Information.jsx";
 import CartPage from "./components/Cart/Cart.jsx";
-
+import ScrollToTop from "./components/Scrolltotop/Scrolltotop.jsx";
 
 function App() {
     return (
         <>
             <BrowserRouter>
-                <Header/>
+                <ScrollToTop />
+                <Header />
                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     <Route path='/products' element={<ProductsPage />} />
                     <Route path='/category/:categoryId' element={<ProductsCategory />} />
                     <Route path='/products/:productId' element={<ItemDetail />} />
                     <Route path='/about' element={<AboutPage />} />
-                    <Route path='/information' element={<InformationPage/>} />
+                    <Route path='/information' element={<InformationPage />} />
                     <Route path='/contact' element={<ContactPage />} />
-                    <Route path='/service' element={<ServicePage/>} />
-                    <Route path='/carro' element={<CartPage/>} />
+                    <Route path='/service' element={<ServicePage />} />
+                    <Route path='/carro' element={<CartPage />} />
                 </Routes>
-                <Footer/>
+                <Footer />
             </BrowserRouter>
         </>
     );
 }
 
-//ProductsPageButton
-//
-// HelpButton
-
 export default App;
+

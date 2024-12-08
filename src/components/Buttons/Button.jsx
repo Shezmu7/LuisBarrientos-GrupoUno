@@ -25,4 +25,4 @@ const ShopButton = ({ onClick }) => {
 
 export default ShopButton;
 
-//Usado en ItemDetail principalmente y reutilizado en otros botones
+//Usado en ItemDetail principalmente y css del <button> reutilizado en otros botones

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getProductById } from '../../data/asyncMock.jsx';
 import Loading from '../Loading/Loading.jsx';
