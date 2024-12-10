@@ -2,14 +2,18 @@ import { useState, useEffect } from 'react';
 import './Header.css';
 import Logo from "../Imagenes/Logo.jsx";
 import Navbar from "../Navbar/Navbar.jsx";
-import {FaShoppingCart, FaBars } from 'react-icons/fa';
+import { FaShoppingCart, FaBars, FaSearch } from 'react-icons/fa';
 import useCartStore from "../../store/CartStore.jsx";
 import CartPageButton from "../Buttons/CartPageButton.jsx";
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
     const [isMobile, setIsMobile] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [searchTerm, setSearchTerm] = useState('');
+    const [isSearchActive, setIsSearchActive] = useState(false);
     const { cart } = useCartStore();
+    const navigate = useNavigate();
 
     useEffect(() => {
         const handleResize = () => {
@@ -24,6 +28,23 @@ const Header = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    const handleSearchChange = (e) => {
+        setSearchTerm(e.target.value);
+    };
+
+    const handleSearchSubmit = (e) => {
+        e.preventDefault();
+        if (searchTerm.trim()) {
+            navigate(`/search?q=${searchTerm}`);
+        } else {
+            navigate('/search');
+        }
+    };
+
+    const toggleSearch = () => {
+        setIsSearchActive(!isSearchActive);
+    };
+
     return (
         <header className="header">
             {isMobile && (
@@ -36,6 +57,20 @@ const Header = () => {
                     <Navbar isMobile={true} />
                 </div>
             )}
+
+            <div className={`search-section ${isSearchActive ? 'active' : ''}`}>
+                <FaSearch className="search-icon" onClick={toggleSearch} />
+                <input
+                    type="text"
+                    placeholder="Buscar productos..."
+                    value={searchTerm}
+                    onChange={handleSearchChange}
+                    onBlur={() => setIsSearchActive(false)}
+                    onKeyDown={(e) => e.key === 'Enter' && handleSearchSubmit(e)}
+                    className="search-input"
+                />
+            </div>
+
             <div
                 className="cart-section"
                 onMouseEnter={() => setIsMenuOpen(true)}

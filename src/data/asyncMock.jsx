@@ -269,6 +269,66 @@ export const products = [
         category: 'Pantalones',
         sizes: ['S', 'M', 'L', 'XL']
     },
+    {
+        id: 28,
+        name: 'Tacos Azules',
+        price: 25000,
+        description: 'Tacos elegantes de color azul',
+        stock: 3,
+        img: '/tacosazules.png',
+        category: 'Zapatos',
+        sizes: ['34.5', '35', '35.5', '36', '36.5', '37']
+    },
+    {
+        id: 29,
+        name: 'Tacos Turquesa',
+        price: 25000,
+        description: 'Tacos elegantes de color turquesa oscuro',
+        stock: 6,
+        img: '/tacosturquesa.png',
+        category: 'Zapatos',
+        sizes: ['35', '35.5', '36', '36.5', '37', '38']
+    },
+    {
+        id: 30,
+        name: 'Tacos Negros',
+        price: 25000,
+        description: 'Tacos elegantes de color negro con moñito',
+        stock: 5,
+        img: '/tacosnegros.png',
+        category: 'Zapatos',
+        sizes: ['35', '36', '36.5', '37', '39']
+    },
+    {
+        id: 31,
+        name: 'Zapatos Negros',
+        price: 25000,
+        description: 'Zapatos negros elegantes para gala',
+        stock: 5,
+        img: '/zapatosnegros.png',
+        category: 'Zapatos',
+        sizes: ['40', '41', '42', '42.5', '43']
+    },
+    {
+        id: 32,
+        name: 'Zapatos Cafe',
+        price: 25000,
+        description: 'Zapatos cafe elegantes',
+        stock: 5,
+        img: '/zapatoscafe.png',
+        category: 'Zapatos',
+        sizes: ['42', '42.5', '43', '44']
+    },
+    {
+        id: 33,
+        name: 'Zapatos Negros Con Bordado',
+        price: 25000,
+        description: 'Zapatos negros con bordados',
+        stock: 5,
+        img: '/zapatosconbordado.png',
+        category: 'Zapatos',
+        sizes: ['41', '42', '43', '44']
+    },
 ];
 
 export const getProducts = () => {

@@ -12,6 +12,7 @@ import ServicePage from "./components/Service/Service.jsx";
 import InformationPage from "./components/Information/Information.jsx";
 import CartPage from "./components/Cart/Cart.jsx";
 import ScrollToTop from "./components/Scrolltotop/Scrolltotop.jsx";
+import SearchResults from "./components/SearchResults/SearchResults.jsx";
 
 function App() {
     return (
@@ -29,6 +30,7 @@ function App() {
                     <Route path='/contact' element={<ContactPage />} />
                     <Route path='/service' element={<ServicePage />} />
                     <Route path='/carro' element={<CartPage />} />
+                    <Route path="/search" element={<SearchResults />} />
                 </Routes>
                 <Footer />
             </BrowserRouter>

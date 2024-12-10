@@ -30,6 +30,7 @@ const Navbar = ({ isMobile = false }) => {
                         <Link to="/category/Blazer">Blazer</Link>
                         <Link to="/category/Camisas">Camisas</Link>
                         <Link to="/category/Vestidos">Vestidos</Link>
+                        <Link to="/category/Zapatos">Zapatos</Link>
                     </div>
                 )}
             </div>
